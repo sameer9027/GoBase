@@ -1,0 +1,12 @@
+# Pseudocode:
+# - Remove stray "4" at start of the file that causes HTTP0004 Invalid URI.
+# - Keep the host address variable declaration.
+# - Keep the GET request referencing the variable.
+# - Ensure the file ends with the request separator "###".
+
+@Web_HostAddress = http://localhost:5234
+
+GET {{Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
